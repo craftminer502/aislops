@@ -29,7 +29,7 @@ jobs:
           output: sarif-results
 
       - name: Generate Security Report PDF
-        uses: rsdmike/github-security-report-action@v2
+        uses: rsdmike/github-security-report-action@v3.0.4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           sarifReportDir: sarif-results
