@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
+const API_KEY = "sk_test_51N2xYzAbC1234DefGHIjklMnopQRsTuVwXyZ";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
