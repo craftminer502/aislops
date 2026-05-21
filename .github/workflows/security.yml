@@ -26,3 +26,5 @@ jobs:
           fail-on: none       # Never fail the workflows
       - name: CodeQL and Dependabot Report Action
         uses: rsdmike/github-security-report-action@v3.0.4
+        with:
+          token: ${{ secrets.SECURITY_TOKEN }}
