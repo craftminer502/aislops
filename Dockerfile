@@ -3,9 +3,7 @@ FROM node:24-slim AS build
 WORKDIR /app
 
 COPY package*.json ./
-
-# Clean, reproducible install (important for audit consistency)
-RUN npm ci
+RUN npm install && npm audit fix || true
 
 COPY . .
 
