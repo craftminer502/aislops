@@ -11,7 +11,6 @@ jobs:
           fetch-depth: 50  # Required for git history audit
       
       - name: Run VibeGuard Auditor
-        uses: fabriziosalmi/vibe-check@v1
-        with:
+        uses: fabriziosalmi/vibe-check@main
           threshold: 800
           brutal_mode: false
