@@ -27,4 +27,4 @@ jobs:
       - name: CodeQL and Dependabot Report Action
         uses: rsdmike/github-security-report-action@v3.0.4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
